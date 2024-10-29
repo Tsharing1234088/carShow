@@ -1,0 +1,764 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courgette&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Fascinate+Inline&family=Great+Vibes&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Satisfy&family=Sofadi+One&display=swap');
+
+body {
+    box-shadow: 0px 0px 2px 2px gray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.myDiv {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color:gray
+}
+html::-webkit-scrollbar{
+    width:0.5rem;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius:3rem;
+    background-color: black;
+}
+
+footer {
+    background-color: rgba(13, 13, 44, 12);
+    border: 1px solid black;
+    height: 100%;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#footers {
+    display: flex;
+    flex-wrap: wrap;/* flex-wrap: wrap; Ensures elements wrap without extra space */
+    padding-bottom: 0px;
+    justify-content: space-between; /* Ensure even space distribution */
+}
+#kunjung, #ifo, #quick, #sub {
+    display: inline-block;
+    width: 20%; /* Elements will take up roughly 1/4 of the available width */
+    position: relative;
+    padding: 0; /* No extra padding */
+    margin: 0;  /* No extra margin */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#kunjung, #ifo, #quick, #sub h3 {
+    font-size: 16px;
+    color: #fff;
+}
+.footerFree{
+    list-style-type: none;
+}
+
+#colorSpan {
+    color: #FFF100;
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+#infoHeads {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+    padding-left: 80px;
+}
+
+.footerInfo {
+    list-style-type: none;
+}
+
+.footerInfo li a {
+    color: azure;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.footerInfo li a:hover {
+    color: #FFF100;
+    text-decoration: underline;
+    
+}
+
+#activ {
+    color: #FFF100;
+    text-decoration: underline;
+    
+}
+
+
+
+.quickHead {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+    padding-left: 40px;
+    
+}
+
+.footerQuick {
+    color: azure;
+    list-style-type: none;
+}
+
+.footerQuick li a {
+    color: azure;
+    text-decoration: none;
+}
+
+.footerQuick li a:hover {
+    color: #FFF100;
+}
+
+
+
+#subscribesHeads {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+   
+}
+
+ #footerSubscribes {
+    display: flex;
+    list-style-type: none;
+}
+
+#footerSubscribes li a {
+    color: aliceblue;
+    padding: 5px;
+}
+
+#footerSubscribes li a:hover {
+    color: #FFF100;
+}
+
+header {
+    padding: 0px;
+    margin: 0;
+    background-color: rgba(13, 13, 44, 12);
+    display: flex;
+    height: auto;
+    position: sticky;
+    justify-content: space-around;
+    top:0px;
+    z-index: 1000;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    margin-right:80px;
+}
+
+#navbar {
+    display: flex;
+    margin: 0px;
+    font-size: 19px;
+    padding-right: 0px;
+    
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #E2DAD6;
+    
+}
+
+#navbar li a:hover, 
+#navbar #activ {
+    color: #FFF100;
+    border-bottom: 3px solid #FFF100;
+    text-decoration: none;
+}
+
+#log {
+    list-style-type: none;
+    display: flex;
+    padding-top: 20px;
+    
+}
+
+#log li {
+    display: inline-flex;
+}
+
+#log a {
+    display: flex;
+    padding: 3px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#log a:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#log li:nth-child(2) a:hover {
+    background-color: #959798;
+}
+
+.mycolor {
+    color: #FFF100;
+    white-space: nowrap;
+    display:inline;
+    padding-left: 550px;
+    font-size: x-large;
+    text-decoration: underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.mychange {
+    color: rgb(12, 12, 12);
+    white-space: nowrap;
+    display: inline;
+    font-size: large;
+}
+
+#blognews {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFF100;
+}
+
+h1 {
+    text-align: center;
+    font-size: small;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(12, 11, 11);
+}
+
+.myDiv img {
+    width: 230px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    background-color: gray;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.blog-container .box {
+    flex: 1 1 10rem;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+.blog-container .box:hover {
+    box-shadow: 0px 0px 2px 2px black;
+    border-radius: 5px;
+    transform: scale(0.9);
+}
+
+.blog-container .box span {
+    font-size: 1rem;
+    color: #FFF100;
+}
+
+.blog-container .box h3 {
+    font-size: 1.2rem;
+}
+
+.blog-container .box p {
+    color: #060606;
+    font-size: 0.938rem;
+    margin: 4px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+    color: rgb(10, 9, 9);
+    cursor: pointer;
+}
+
+
+
+.read-more:hover {
+    color: #F3C623;
+    column-gap: 0.7rem;
+    transition: 0.4s;
+}
+
+#myPic {
+    width: 100%;
+    height:550px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: 0px 0px 15px gray;
+   
+}
+
+
+#myImage h1 {
+    position: relative;
+    bottom: 500px;
+    color:aliceblue;
+    font-family: "Courgette", cursive;
+    font-size: 20px;
+}
+#fod {
+    text-align: center;
+    background-color:w;
+    color: #fff;
+  }
+  #logo2{
+     height: 170px;
+    width: 200px;
+    display: flex;
+  }
+  #log {
+    list-style-type: none;
+}
+
+#log li {
+    display: inline;
+}
+
+#log a {
+    color: rgb(5, 4, 4);
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 700px;
+    top:20px
+}
+
+/* Mobile Menu Icon */
+#nav-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(253, 251, 251);
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    display: none;
+    list-style-type: none;
+    background-color:white;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+#mobile-menu li {
+    margin: 10px 0;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 758px) {
+    #ourBlog{
+        margin: 0;
+        padding-left: 0;
+        background-color: #fff;
+    }
+
+    
+    /* Navbar */
+    #navbar {
+        display: none; /* Hide the normal navbar on small screens */
+    }
+    header{
+        height: auto;
+    }
+
+    /* Mobile Menu Icon */
+    #nav-icon {
+        display: block; /* Show the mobile menu icon */
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu {
+        display: none; /*Initially hidden */
+        list-style-type: none;
+        background-color: rgba(13, 13, 44, 12);
+        padding: 1rem;
+        position: absolute;
+        top: 80px;
+        left:0px;
+        right: 0px;
+        z-index: 1000;
+    }
+    #mobile-menu.active {
+        display: block; /* Display the mobile menu when active */
+    }
+
+    #mobile-menu li {
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #mobile-menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        
+        
+    }
+
+    /* Style for items in the mobile menu */
+
+    #mobile-menu a :hover{
+        background-color: #FFF100;
+    }
+    
+    #mobile-menu a :hover,
+    #mobile-menu #activ{
+        background-color: #FFF100;
+        color: #060606;
+    } 
+    
+
+    /* Adjust logo positioning on mobile */
+    .logo {
+        
+        height: 90px;
+        width: 90px;
+    }
+
+    /* Adjust the logo in the center */
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    /* Adjust "mycolor" text in the navbar */
+    .mycolor {
+        padding-left: 300px;
+        white-space:nowrap;
+        font-size: large;
+        text-align: center;
+    }
+    .mychange{
+        white-space:nowrap;
+        font-size:13px;
+        
+    }
+    #footers {
+        display: block; /* Stack the elements vertically */
+        padding: 30px; /* Adjust padding */
+        justify-content: center; /* Center-align the content */
+    }
+
+    /* Footer sections will stack vertically and take full width */
+    #kunjung, #ifo, #quick, #sub {
+        width: 100%; /* Full width for each section */
+        display: block; /* Stack elements */
+        margin-bottom: 20px; /* Add space between stacked items */
+        text-align: center; /* Center-align text for better mobile UX */
+    }
+
+    /* Adjust headings and font sizes for smaller screens */
+    #kunjung h2, #ifo h2, #quick h2, #sub h2{
+        font-size: 15px; /* Slightly smaller font size for mobile */
+    }
+
+    /* Adjust text and link padding */
+    #infoHeads, .quickHead, #subscribesHeads {
+        padding-left: 0; /* Remove padding for smaller screens */
+        text-align: center; /* Center-align headings */
+        font-size: 20px;
+
+    }
+    
+
+    .footerInfo li a, .footerQuick li a #footerSubscribes li a {
+        padding-left: 0; /* Remove padding for links */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    /* Adjust the footer subscribe links */
+    #footerSubscribes,{
+        display: flex; /* Stack subscription elements */
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    #footerSubscribes li {
+        margin-bottom: 10px; /* Space between subscription items */
+   
+    }
+    #footerSubscribes li a {
+        font-size: 14px; /* Adjust font size */ 
+        padding-left: 10px; 
+        position: relative;
+        left: 90px;
+    }  
+
+        #log{
+            display: none;
+         position: absolute;
+         right: 65px;
+        }
+        #log a{
+            font-size: 10px;
+           margin-left: 10px;
+           
+        }
+        #logo2{
+            display: none;
+        }
+
+
+
+    }
+    
+    @media (max-width: 700px) {
+        .mycolor{
+         padding-left: 190px;
+        }
+        #footerSubscribes{
+            padding-left: 100px;
+        }
+    
+     }
+     @media (max-width: 500px) {
+        .mycolor{
+         padding-left: 150px;
+        }
+        #footerSubscribes{
+            position: relative;
+            right: 80px;
+        }
+    
+     }
+     @media (max-width: 380px){
+         .mycolor{
+             padding-left: 120px;
+            }
+            #footerSubscribes{
+                position: relative;
+               right: 109px;
+            }
+     }
+     @media (min-width: 750px) and (max-width: 1250px) {
+
+        /* General body styling */
+        body {
+            box-shadow: 0px 0px 4px 2px gray;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        /* Footer styling */
+        footer {
+            background-color: rgba(13, 13, 44, 12);
+            margin-top: 0px;
+            width: auto;
+            padding: 0px;
+            
+        }
+    
+        #footers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom:auto;
+            
+        }
+    
+        #kunjung, #ifo, #quick, #sub {
+            width: 45%; /* Two columns on mid-size screens */
+            padding: 15px;
+            font-size: 22px;
+            text-align: center; /* Center text for smaller columns */
+            margin-bottom: 30px; /* Add spacing between sections */
+        }
+    
+        /* Footer headings */
+        #kunjung h2, #ifo h2, #quick h2, #sub h2 {
+            font-size: 19px;
+            color: #fff;
+        }
+    
+        /* Header styling */
+        header {
+            padding: 10px;
+            background-color: rgba(13, 13, 44, 12);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        /* Logo adjustments */
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+        #logo2{
+            width: 300px;
+            height: 300px;
+           
+        }
+    
+        /* Navbar styling */
+        #navbar {
+            display: flex;
+            margin: 10px;
+            padding-right: 30px;
+            font-size: 15px;
+        }
+    
+        #navbar li {
+            list-style-type: none;
+            padding-left: 20px; /* Reduced spacing for smaller screens */
+        }
+    
+        #navbar li a {
+            color: #E2DAD6;
+            text-decoration: none;
+        }
+    
+        #navbar li a:hover,
+        #navbar #activ {
+            color: #F3C623;
+            border-bottom: 2px solid #F3C623;
+        }
+    
+        /* Blog images and container */
+        .myDiv img {
+            width: 300px;
+            height: 250px;
+        }
+    
+        .blog-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+    
+        .blog-container .box {
+            flex: 1 1  10rem;
+            padding: 15px;
+        }
+    
+        /* Font adjustments */
+        .mycolor {
+            font-size: large;
+            padding-left: 300px;
+        }
+    
+        .mychange {
+            font-size: medium;
+        }
+    
+        /* Adjust full-width image */
+        #myPic {
+            height: 500px;
+        }
+    
+        /* Adjust header over image */
+        #myImage h1 {
+            font-size: 24px;
+            position: relative;
+            bottom: 450px;
+        }
+    
+        /* Footer subscription link hover effect */
+        #footerSubscribes li a:hover {
+            color: #F3C623;
+        }
+    
+        /* Hide mobile menu icon */
+        #nav-icon, #mobile-menu {
+            
+            display: none;
+        }
+        #log{
+            padding-left: 320px;
+            position: relative;
+            bottom: 20px;
+        }
+    
+        /* Login button alignment */
+        #log a {
+            margin-left: 0px; /* Adjust login button for mid-size screens */
+            font-size: 14px;
+            
+        }
+    
+        /* Footer icons */
+        #footerSubscribes {
+            display: flex;
+            padding-left: 120px;
+        }
+    
+        #footerSubscribes li {
+            padding: 0px;
+        }
+        #fod{
+            margin: 0;
+        }
+
+    }
+    
+     
+
+     
+     
+   
+    
+
+
+
+
+
+
+
+
+
+
+

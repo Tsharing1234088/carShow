@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastRent Cars</title>
+    <link rel="stylesheet" href="rental.css" />
+    <link rel="stylesheet" href="path/to/your/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="kj_logo-removebg-preview.png" alt="logo">
+        <nav>
+            <ul id="log">
+                <li><a href="sign.html">Sign Up</a></li>
+            </ul>
+            <ul id="navbar">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a  id="active" href="rental.html">Rental</a></li>
+                <li><a href="blog.html" >Blog</a></li>
+                <li><a href="service.html">Services</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <i class="fa fa-bars" id="menu-icon"></i> 
+        </div> 
+        <ul id="mobile-menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="rental.html"id="active">Rental</a></li>
+            <li><a href="blog.html" >Blog</a></li>
+            <li><a href="service.html">Services</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Banner -->
+     <div id="rental">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.pinimg.com/474x/82/21/98/82219876656cca3c03e3c6b15c8475c7.jpg" class="d-block w-100" alt="..." style="padding: 10px;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/474x/db/fc/29/dbfc299b8e6be53f761ece50b288c788.jpg" class="d-block w-100" alt="..."  style="padding: 10px;">
+
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/474x/fa/45/d8/fa45d89f670d1a4f7804084d9f491255.jpg" class="d-block w-100" alt="..."   style="padding: 10px;">
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+
+    <!-- Car Listings -->
+    <main>
+        <section class="car-listing">
+            <!-- Repeat for each car -->
+            <article class="car">
+                <img src="suzuki jimny.png" alt="Suzuki Jimny">
+                <h2>Suzuki Jimny</h2>
+                <p>Starting at $50/day</p>
+                <button class="details-btn" onclick="showDetails(1)">Details</button>
+                <button class="book-btn" onclick="bookCar(1)">Book</button>
+            </article>
+
+            <article class="car">
+                <img src="sedan.jpg" alt="Sedan">
+                <h2>Sedan</h2>
+                <p>Starting at $65/day</p>
+                <button class="details-btn" onclick="showDetails(2)">Details</button>
+                <button class="book-btn" onclick="bookCar(2)">Book</button>
+            </article>
+
+            <article class="car extra-car">
+                <img src="https://i.pinimg.com/564x/75/54/bc/7554bcf4ce2e9ced042670ab749e0b3b.jpg" alt="Honda Civic">
+                <h2>Honda Civic</h2>
+                <p>Starting at $55/day</p>
+                <button class="details-btn" onclick="showDetails(4)">Details</button>
+                <button class="book-btn" onclick="bookCar(4)">Book</button>
+            </article>
+
+            <article class="car extra-car">
+                <img src="https://i.pinimg.com/736x/88/58/15/885815e57c538485c90e3578bf760aa4.jpg" alt="Mercedes">
+                <h2>Mercedes</h2>
+                <p>Starting at $150/day</p>
+                <button class="details-btn" onclick="showDetails(7)">Details</button>
+                <button class="book-btn" onclick="bookCar(7)">Book</button>
+            </article>
+
+            <article class="car extra-car">
+                <img src="https://i.pinimg.com/564x/42/f8/57/42f8575bbdddcf1de59763140a24b706.jpg" alt="Range roover" >
+
+                <h2>Range roover</h2>
+                <p>Starting at $110/day</p>
+                <button class="details-btn" onclick="showDetails(6)">Details</button>
+                <button class="book-btn" onclick="bookCar(6)">Book</button>
+            </article>
+
+            <article class="car extra-car">
+                <img src="https://i.pinimg.com/564x/83/d9/a1/83d9a158bbd3961b33dadbda668af8aa.jpg" alt="Toyota Corolla" >
+
+                <h2>Toyota Corolla</h2>
+                <p>Starting at $60/day</p>
+                <button class="details-btn" onclick="showDetails(8)">Details</button>
+                <button class="book-btn" onclick="bookCar(8)">Book</button>
+            </article>
+
+            <article class="car extra-car">
+                <img src="tesla car s.jpg" alt="Tesla Model S">
+                <h2>Tesla Model S</h2>
+                <p>Starting at $120/day</p>
+                <button class="details-btn" onclick="showDetails(3)">Details</button>
+                <button class="book-btn" onclick="bookCar(3)">Book</button>
+            </article>
+        </section>
+
+        <!-- Show More Button -->
+        <div class="show-more-container">
+            <button id="show-more-btn" onclick="toggleShowMore()">Show More</button>
+        </div>
+    </main>
+
+    <!-- Modal for Car Details -->
+    <div id="details-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="details-modal-title">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()" aria-label="Close">&times;</button>
+            <div id="modal-details-content"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Booking -->
+    <div id="booking-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()" aria-label="Close">&times;</button>
+            <div id="modal-booking-content">
+                <!-- Booking Form -->
+                <h2 id="booking-modal-title">Book Your Car</h2>
+                <form id="booking-form">
+                    <input type="hidden" id="car-id" name="carId">
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <button type="submit">Submit Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials py-5">
+    <div class="container">
+        <h2 class="text-center">What Our Customers Say</h2>
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-item">
+                        <p>"FastRent made my trip so much more enjoyable! The car was clean and well-maintained."</p>
+                        <img src="rw.jpg" alt="Customer 1" style="height: 100px; width:100px; border-radius: 3em;">
+                        <h5>Rinchen Wangchuk</h5>
+                        <span>Regular Customer</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-item">
+                        <p>"I was impressed by their quick service. Booking a car was easy and hassle-free."</p>
+                        <img src="jkp.jpg" alt="Customer 2" style="height: 100px; width:100px; border-radius: 3em;">
+                        <h5>Jamyang Kinga Phuntsho</h5>
+                        <span>Business Traveler</span>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-item">
+                        <p>"Excellent customer service and great value for money. Highly recommend FastRent!"</p>
+                        <img src="ajit.jpg" alt="Customer 3" style="height: 100px; width:100px; border-radius: 3em;">
+                        <h5>Ajit Rai</h5>
+                        <span>Frequent Renter</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+</div>
+
+    
+<footer>
+    <div id="footers">
+        <img src="car-gif-unscreen.gif" alt="" id="logo2">
+        <div id="kunjung">
+            <h2 id="freeHeads"><span id="colorSpan">KunJung</span>Automobile</h2>
+            <ul class="footerFree">
+                <li><i class="fa-solid fa-map-location"></i>&nbspBhutan;Thimphu;Babesa.</li>
+                <li><i class="fa-solid fa-envelope"></i>&nbspKunJung@gmail.com.</li>
+                <li><i class="fa-solid fa-phone"></i>&nbsp+957097509(Toll Free).</li>
+            </ul>
+        </div>
+
+        <div id="ifo">
+            <h2 id="infoHeads">QuickLinks</h2>
+            <ul class="footerInfo">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a id="active" href="#rental">Rental</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="service.html">Services</a></li>
+            </ul>
+        </div>
+
+        <div id="quick">
+            <h2 class="quickHead">OurInfos.</h2>
+            <ul class="footerQuick">
+                <li><a href="terms.html">Terms&Conditions</a></li>
+                <li><a href="#">PrivacyPolicy</a></li>
+            </ul>
+        </div>
+
+        <div id="sub">
+            <h2 id="subscribesHeads">Subscribe Us</h2>
+            <ul id="footerSubscribes">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            </ul>    
+    </div> 
+  </div>
+
+    <footer id="fod">
+        <p>&copy; 2024 Kun-Jung Automobile.Car showroom.</p>
+    </footer>
+</footer>
+      
+        
+   
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="rental.js"></script>
+</body>
+
+</html>

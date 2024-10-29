@@ -1,0 +1,646 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: gray;
+}
+header {
+    padding: 0px;
+    background-color: rgba(13, 13, 44, 12);
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    top:0px;
+    overflow-y: hidden;
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: black;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;   
+   
+}
+#overflow{
+    overflow: hidden;
+}
+
+#navbar {
+    display: flex;
+    margin: 0px;
+    font-size: 19px;
+    padding-right: 0px;
+    
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-left: 55px;
+}
+#mainPop{
+    font-family: "Rubik Wet Paint", serif;
+}
+#texOne{
+    text-shadow: 3px 2px black;
+    font-family: "Acme", sans-serif;
+
+}
+#texTwo{
+    text-shadow: 3px 2px black;
+    font-family: "Acme", sans-serif;
+}
+#texThree{
+    text-shadow: 3px 2px black;
+    font-family: "Acme", sans-serif;
+}
+
+
+#navbar li a {
+    text-decoration: none;
+    color: #E2DAD6;
+    
+}
+
+#navbar li a:hover, 
+#navbar #active {
+    color: rgb(236, 191, 11);
+    border-bottom: 3px solid ;
+    text-decoration: none;
+}
+
+#log {
+    list-style-type: none;
+    display: flex;
+}
+
+#log li {
+    display: inline-flex;
+    padding-left: 740px;
+    padding-top: 20px;
+}
+
+#log a {
+    display: flex;
+    padding: 5px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#log a:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#log li:nth-child(2) a:hover {
+    background-color: #959798;
+}/* Mobile Menu */
+#mobile-menu {
+    display: none;
+    list-style-type: none;
+    background-color: #01041f;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+#mobile-menu li {
+    margin: 10px 0;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#mobile-menu a:hover {
+    color: #f0a500;
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 420px) {
+    #navbar {
+        display: none;
+    }
+
+    #nav-icon {
+        display: block;
+    }
+
+    #log {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /* Navbar */
+    #navbar {
+        display: none; /* Hide the normal navbar on small screens */
+    }
+    header{
+        height: 80px;
+    }
+
+    /* Mobile Menu Icon */
+    #nav-icon {
+        display: block; /* Show the mobile menu icon */
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu {
+        display: none; /*Initially hidden */
+        list-style-type: none;
+        background-color: rgba(13, 13, 44, 12);
+        padding: 1rem;
+        position: absolute;
+        top: 83px;
+        left:0px;
+        right: 0px;
+        z-index: 1000;
+    }
+    div.secondContainer{
+        padding: 0;
+        
+    }
+     .secondContainer #imgOne{
+        width: 145px; 
+        height: 180px;
+    }
+    .setOne .title{
+        font-size: 25px;
+    }
+
+    .firstImg #imgOne{
+        width: 120px;
+        height: 130px;
+        position: relative;
+        right: 8px;
+        top: 15px;
+    }
+    .firstImg a{
+        position: relative;
+        top:35px;
+    }
+    .SecondImg #imgTwo{
+        height: 130px;
+        width: 125px;
+        border-radius: 5px;
+        margin-top: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .SecondImg a{
+        position: relative;
+        top: 20px;
+    }
+    .thirdImg #imgThree{
+        height: 130px;
+        width: 118px;
+        border-radius: 5px;
+        margin-top: 25px;
+        margin-left: 12px;
+    }
+    .thirdImg a{
+        position: relative;
+        top: 20px;
+    }
+    #mobile-menu.active {
+        display: block; /* Display the mobile menu when active */
+    }
+
+    #mobile-menu li {
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        
+        
+    }
+
+    /* Style for items in the mobile menu */
+
+    #mobile-menu a :hover{
+        background-color: rgb(223, 243, 6);
+    }
+    
+    #mobile-menu a :hover, 
+    #mobile-menu #active{
+        background-color: rgba(242, 242, 17, 0.888);
+        color: #01041f;
+    } 
+    
+
+    /* Adjust logo positioning on mobile */
+    .logo {
+        position: relative;
+        left: 10px;
+        bottom: 12px;
+        height: 80px;
+        width: 80px;
+    }
+
+    /* Adjust the logo in the center */
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    h2 .title,#pan{
+        font-size: 12px;
+    }
+
+   
+    #footers {
+        display: block; /* Stack the elements vertically */
+        padding-bottom: 2px; /* Adjust padding */
+        justify-content: center; /* Center-align the content */
+    }
+
+    /* Footer sections will stack vertically and take full width */
+    #kunjung, #ifo, #quick, #sub {
+        width: 100%; /* Full width for each section */
+        display: block; /* Stack elements */
+        margin-bottom: 20px; /* Add space between stacked items */
+        text-align: center; /* Center-align text for better mobile UX */
+    }
+
+    /* Adjust headings and font sizes for smaller screens */
+    #kunjung h2, #ifo h2, #quick h2, #sub h2 {
+        font-size: 12px; /* Slightly smaller font size for mobile */
+    }
+    h2#infoHeads {
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+
+    /* Adjust text and link padding */
+    #infoHeads, .quickHead, #subscribesHeads {
+        padding-left: 0; /* Remove padding for smaller screens */
+        text-align: center; /* Center-align headings */
+
+    }
+    
+
+    .footerInfo li a, .footerQuick li a {
+        padding-left: 0; /* Remove padding for links */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    /* Adjust the footer subscribe links */
+    #footerSubscribes {
+        display: flex; /* Stack subscription elements */
+        text-align: center; /* Center-align the content */
+    }
+
+    #footerSubscribes li {
+        margin-bottom: 10px; /* Space between subscription items */
+    }
+
+    #footerSubscribes li a {
+        font-size: 10px; /* Adjust font size */ 
+        padding-left: 10px; 
+        position: relative;
+        left: 90px;
+    }
+    #logo2{
+        display: none;
+    }
+        
+
+        #log{
+         position: absolute;
+         right: 65px;
+        }
+        #log a{
+            font-size: 10px;
+           margin-left: 10px;
+           
+        }
+    }
+    @media (max-width: 420px){
+        #nav-icon i{
+            color: aliceblue;
+            position: relative;
+            right: 55rem;
+            
+        }
+        .carousel-item.active{
+            height: 355px;
+        }
+        .setOne .title{ 
+            text-align: center;
+            font-size: 17px;     
+        }
+        .title span #pan{
+            font-size: 20px;
+        }
+ 
+    }
+    .title{
+        text-align: center;
+        font-size: 25px;
+    }
+   
+     #imgOne{ 
+        height: 200px;
+        width: 215px; 
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 12px;
+        border: 1px solid white;
+        }
+    #imgTwo{ 
+        height: 200px;
+        width: 225px; 
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 8px;
+        border: 1px solid white;
+    }
+    #imgThree{ 
+        height: 200px;
+        width: 215px; 
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 12px;
+        border: 1px solid white;
+        }
+    .firstImg{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        height: 250px;
+        width: 240px;
+        border-radius: 3px;
+        box-shadow:3px 4px 4px #959798;
+        background-color: rgba(13, 13, 44, 5);
+    }
+    .SecondImg{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        height: 250px;
+        width: 240px;
+        border-radius: 3px;
+        box-shadow:3px 4px 4px #959798;
+        background-color: rgba(13, 13, 44, 5);
+    }
+    .thirdImg{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        height: 250px;
+        width: 240px;
+        border-radius: 3px;
+        box-shadow:3px 4px 4px #959798;
+        background-color: rgba(13, 13, 44, 5);
+    }
+    .secondContainer{
+        display: flex;
+       padding-left: 195px;
+       padding-right: 195px;
+       justify-content: space-between;
+        
+    }
+    #menu-icon{
+        display: none;
+    }
+
+    .setOne{
+        height: 370px;
+    }
+    #quote{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 25px;
+        font-family: "Oleo Script", system-ui;
+    }
+    @media (max-width: 420px){
+       Img .logo{
+        margin-bottom: 55px;
+       }
+       div.carousel-inner{
+        background-image:url("https://www.shutterstock.com/image-illustration/racing-finish-line-on-asphalt-600nw-1967595388.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+      }
+      .carousel-item h5, p{
+        display:block;
+      }
+      
+      h2#infoHeads {
+        padding-left:30px;
+      }
+      #kunjung h2 span{
+        font-size: 18px;
+        
+      }
+      .footerFree li{
+        font-size: 10px;
+        padding-left: 40px;
+      }
+      .footerInfo li a{
+        font-size: 10px;
+        position: relative;
+        right: 45px;
+      }
+      .footerQuick li a{
+        font-size: 10px;
+      }
+      .footerFree li{
+        position: relative;
+        right: 55px;
+        justify-content: center;
+        margin: 6px;
+       word-spacing: -0.5px;
+      }
+     #footerSubscribes li a i{
+        position: relative;
+        right: 115px;
+     }
+     #footers{
+        height: 275px;
+     }
+     #fod{
+        height: 25px;
+     }
+      #fod p{
+        font-size: 14px;
+      }
+      div.carousel-inner{
+        height: 357px;
+      }
+      .carousel-inner img{
+        position: relative;
+        bottom: 225px;
+      }
+      .nav-icon #menu-icon{
+        display: flex;
+        color: aliceblue;
+        font-size: 24px;
+      }
+      #quote{
+        text-align: center;
+        font-size: 17px;
+        padding-top: 15px;
+      }
+        
+        }
+   .carousel-inner p{
+      background-image: url(".vscode/abstract-brush-stroke-for-copy-space-in-retro-comic-style-design-png.webp");
+     
+
+   }
+
+
+footer {
+    background-color: rgba(13, 13, 44, 12);
+    border: 1px solid black;
+    height: 100%;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#footers {
+    display: flex;
+    /* flex-wrap: wrap; Ensures elements wrap without extra space */
+    padding-bottom: 50px;
+    justify-content: space-between; /* Ensure even space distribution */
+}
+#kunjung, #ifo, #quick, #sub {
+    display: inline-block;
+    width: 20%; /* Elements will take up roughly 1/4 of the available width */
+    position: relative;
+    padding: 0; /* No extra padding */
+    margin: 0;  /* No extra margin */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#kunjung, #ifo, #quick, #sub h3 {
+    font-size: 16px;
+    color: #fff;
+}
+
+#colorSpan {
+    color: rgb(237, 218, 8);
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+#infoHeads {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+    padding-left: 80px;
+}
+
+.footerInfo {
+    list-style-type: none;
+}
+
+.footerInfo li a {
+    color: azure;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.footerInfo li a:hover {
+    color: rgba(242, 234, 10, 0.897);
+    text-decoration: underline;
+    
+}
+
+#active {
+    color: rgb(220, 213, 6);
+    text-decoration: underline;
+    
+}
+
+.footerFree{
+    list-style-type: none;
+}
+
+.quickHead {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+    padding-left: 40px;
+    
+}
+
+.footerQuick {
+    color: azure;
+    list-style-type: none;
+}
+
+.footerQuick li a {
+    color: azure;
+    text-decoration: none;
+}
+
+.footerQuick li a:hover {
+    color: rgb(229, 200, 10);
+}
+
+
+
+#subscribesHeads {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+   
+}
+
+ #footerSubscribes {
+    display: flex;
+    list-style-type: none;
+}
+
+#footerSubscribes li a {
+    color: aliceblue;
+    padding: 5px;
+}
+
+#footerSubscribes li a:hover {
+    color: rgb(230, 219, 7);
+}
+#logo2{
+    height: 160px;
+   width: 150px;
+ }
+ #fod {
+    text-align: center;
+    background-color: #2b2d42;
+    color: #fff;
+  }
+  div.carousel-inner{
+    background-image:url("https://www.shutterstock.com/image-illustration/racing-finish-line-on-asphalt-600nw-1967595388.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+ 

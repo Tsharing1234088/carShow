@@ -1,0 +1,672 @@
+
+
+#back{
+    background-image: url("https://i.pinimg.com/564x/ad/c6/85/adc685fee66ede448182584111b70292.jpg");
+}
+
+.background {
+    position: relative;
+    left: 800px;
+ bottom: 600px;
+    width: 40%;
+    height: 77%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("https://i.pinimg.com/enabled_lo/564x/9e/c2/71/9ec2712beefe05f20ff8f613f3089c9d.jpg");
+    background-repeat: no-repeat;
+ 
+}
+
+#content{ 
+ height: 700px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgb(10, 10, 10);
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.map{
+padding: 50px;
+
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: black;
+}
+.flow{
+    overflow-x:hidden;
+}
+
+#butt{
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* reviews */
+#reviews h1{
+    color: rgb(12, 14, 14);
+  
+  }
+
+  
+  #reviews img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;  
+  }
+
+  
+  
+  #reviews {
+      background-color: #f2f2f2;
+      padding: 40px 0;
+      text-align: center;
+      
+  }
+  
+  .reviews-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+  }
+  
+  .review {
+      flex: 1 1 calc(30% - 20px); 
+      margin: 10px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      text-align: center;
+  }
+  
+  .stars {
+      font-size: 20px;
+      color: #1a10d6;
+      margin-top: 10px;
+  }
+/* reviews */
+
+
+/* header */
+
+
+.hero {
+    height: 100vh;
+    background: url(https://i.pinimg.com/originals/d6/7f/7d/d67f7d25e5051a52184e7619065c3eea.gif) no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background: #6b6c6c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: back-ground 0.3s;
+    position: relative;
+    top: 300px;
+    right: 240px;
+}
+
+.cta-button:hover {
+    background: #2980b9;
+   
+
+}
+#h3{
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 40px;
+}
+#pa{
+    color: white;
+    position: relative;
+    top: 210px;
+    left: 40px;
+}
+/* image */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+header {
+    text-align: center;
+}
+
+/* footer */
+
+
+/* review */
+
+
+/* header n footer */
+header {
+    padding: 0px;
+    background-color: rgba(13, 13, 44, 12);
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    top:0px;
+    overflow-y: hidden;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;   
+   
+}
+
+#navbar {
+    display: flex;
+    margin: 0px;
+    font-size: 19px;
+    padding-right: 0px;
+    
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-left: 55px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #E2DAD6;
+    
+}
+
+#navbar li a:hover, 
+#navbar #active {
+    color: rgb(236, 191, 11);
+    border-bottom: 3px solid ;
+    text-decoration: none;
+}
+
+#log {
+    list-style-type: none;
+    display: flex;
+}
+
+#log li {
+    display: inline-flex;
+    padding-left: 740px;
+    padding-top: 20px;
+}
+
+#log a {
+    display: flex;
+    padding: 5px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#log a:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#log li:nth-child(2) a:hover {
+    background-color: #959798;
+}/* Mobile Menu */
+#mobile-menu {
+    display: none;
+    list-style-type: none;
+    background-color: #01041f;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+#mobile-menu li {
+    margin: 10px 0;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#mobile-menu a:hover {
+    color: #f0a500;
+}
+#menu-icon{
+    display: none;
+}
+
+footer {
+    background-color: rgba(13, 13, 44, 12);
+    border: 1px solid black;
+    height: 100%;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#footers {
+    display: flex;
+    /* flex-wrap: wrap; Ensures elements wrap without extra space */
+    padding-bottom: 50px;
+    justify-content: space-between; /* Ensure even space distribution */
+}
+#kunjung, #ifo, #quick, #sub {
+    display: inline-block;
+    width: 20%; /* Elements will take up roughly 1/4 of the available width */
+    position: relative;
+    padding: 0; /* No extra padding */
+    margin: 0;  /* No extra margin */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#kunjung, #ifo, #quick, #sub h3 {
+    font-size: 16px;
+    color: #fff;
+}
+
+#colorSpan {
+    color: rgb(237, 218, 8);
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+#infoHeads {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+    padding-left: 80px;
+}
+
+.footerInfo {
+    list-style-type: none;
+}
+
+.footerInfo li a {
+    color: azure;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.footerInfo li a:hover {
+    color: rgba(242, 234, 10, 0.897);
+    text-decoration: underline;
+    
+}
+
+#active {
+    color: rgb(220, 213, 6);
+    text-decoration: underline;
+    
+}
+
+.footerFree{
+    list-style-type: none;
+}
+
+.quickHead {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+    padding-left: 40px;
+    
+}
+
+.footerQuick {
+    color: azure;
+    list-style-type: none;
+}
+
+.footerQuick li a {
+    color: azure;
+    text-decoration: none;
+}
+
+.footerQuick li a:hover {
+    color: rgb(229, 200, 10);
+}
+
+
+
+#subscribesHeads {
+    color: rgb(143, 154, 163);
+    text-decoration: underline;
+   
+}
+
+ #footerSubscribes {
+    display: flex;
+    list-style-type: none;
+}
+
+#footerSubscribes li a {
+    color: aliceblue;
+    padding: 5px;
+}
+
+#footerSubscribes li a:hover {
+    color: rgb(230, 219, 7);
+}
+#logo2{
+    height: 160px;
+   width: 150px;
+ }
+ #fod {
+    text-align: center;
+    background-color: #2b2d42;
+    color: #fff;
+  }
+  @media (max-width: 420px) {
+    #navbar {
+        display: none;
+    }
+
+    #nav-icon {
+        display: block;
+    }
+
+    #log {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Navbar */
+    #navbar {
+        display: none; /* Hide the normal navbar on small screens */
+    }
+    header{
+        height: 80px;
+    }
+
+    /* Mobile Menu Icon */
+    #nav-icon {
+        display: block; /* Show the mobile menu icon */
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu {
+        display: none; /*Initially hidden */
+        list-style-type: none;
+        background-color: rgba(13, 13, 44, 12);
+        padding: 1rem;
+        position: absolute;
+        top: 83px;
+        left:0px;
+        right: 0px;
+        z-index: 1000;
+    }
+
+    #mobile-menu.active {
+        display: block; /* Display the mobile menu when active */
+    }
+
+    #mobile-menu li {
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        
+        
+    }
+
+    /* Style for items in the mobile menu */
+
+    #mobile-menu a :hover{
+        background-color: rgb(223, 243, 6);
+    }
+    
+    #mobile-menu a :hover,
+    #mobile-menu #active{
+        background-color: rgba(242, 242, 17, 0.888);
+    } 
+    
+
+    /* Adjust logo positioning on mobile */
+    .logo {
+        position: relative;
+        left: 10px;
+        bottom: 12px;
+        height: 80px;
+        width: 80px;
+    }
+
+    /* Adjust the logo in the center */
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #footers {
+        display: block; /* Stack the elements vertically */
+        padding-bottom: 2px; /* Adjust padding */
+        justify-content: center; /* Center-align the content */
+    }
+
+    /* Footer sections will stack vertically and take full width */
+    #kunjung, #ifo, #quick, #sub {
+        width: 100%; /* Full width for each section */
+        display: block; /* Stack elements */
+        margin-bottom: 20px; /* Add space between stacked items */
+        text-align: center; /* Center-align text for better mobile UX */
+    }
+
+    /* Adjust headings and font sizes for smaller screens */
+    #kunjung h2, #ifo h2, #quick h2, #sub h2 {
+        font-size: 12px; /* Slightly smaller font size for mobile */
+    }
+    h2#infoHeads {
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+
+    /* Adjust text and link padding */
+    #infoHeads, .quickHead, #subscribesHeads {
+        padding-left: 0; /* Remove padding for smaller screens */
+        text-align: center; /* Center-align headings */
+
+    }
+    
+
+    .footerInfo li a, .footerQuick li a {
+        padding-left: 0; /* Remove padding for links */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    /* Adjust the footer subscribe links */
+    #footerSubscribes {
+        display: flex; /* Stack subscription elements */
+        text-align: center; /* Center-align the content */
+    }
+
+    #footerSubscribes li {
+        margin-bottom: 10px; /* Space between subscription items */
+    }
+
+    #footerSubscribes li a {
+        font-size: 10px; /* Adjust font size */ 
+        padding-left: 10px; 
+        position: relative;
+        left: 90px;
+    }
+    #logo2{
+        display: none;
+    }
+        
+
+        #log{
+         position: absolute;
+         right: 65px;
+        }
+        #log a{
+            font-size: 10px;
+           margin-left: 10px;
+           
+        }
+    }
+    @media (max-width: 420px){
+        #nav-icon i{
+            color: aliceblue;
+            position: relative;
+            right: 55rem;
+            
+        }
+        #map{
+            height: 300px;
+            width: 250px;
+            position: relative;
+            right: 10px;
+        }
+        Img .logo{
+            margin-bottom: 55px;
+           }
+
+           h2#infoHeads {
+            padding-right:40px;
+          }
+          #kunjung h2 span{
+            font-size: 18px;
+            
+          }
+          .footerFree li{
+            font-size: 10px;
+            padding-left: 30px;
+          }
+          .footerInfo li a{
+            font-size: 10px;
+            position: relative;
+            right: 45px;
+          }
+          .footerQuick li a{
+            font-size: 10px;
+            padding-right: 30px;
+          }
+          .quickHead{
+            padding-right: 47px;
+          }
+          .background {
+            position: relative;
+            bottom: 420px;
+            width: 450px;
+            height: 150px;}
+            
+          .footerFree li{
+            position: relative;
+            right: 55px;
+            justify-content: center;
+            margin: 6px;
+           word-spacing: -0.5px;
+          }
+         #footerSubscribes li a i{
+            position: relative;
+            right: 115px;
+         }
+         #footers{
+            height: 415px;
+         }
+         #fod{
+            height: 25px;
+         }
+          #fod p{
+            font-size: 14px;
+          }
+          div.carousel-inner{
+            height: 357px;
+          }
+          .carousel-inner img{
+            position: relative;
+            bottom: 225px;
+          }
+          .nav-icon #menu-icon{
+            display: flex;
+            color: aliceblue;
+            font-size: 24px;
+          }
+        }
